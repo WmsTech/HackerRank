@@ -20,6 +20,13 @@ print(strings_xor(s, t))
 # Solution
 
 def strings_xor(s, t):
+    """
+    This funcion takes a paramenters two strings symbolizing a 'set of bits', applies the XOR operation to each item in both strings and returns the resulting 'set of bits'.
+    :param s: str - 'set of bits'
+    :param t: str - 'set of bits'
+    :return: str - the resulting 'set of bits'
+    """
+    
     res = ""
     for i in range(len(s)):
         if s[i] == t[i]: # fixed equality for comparison
