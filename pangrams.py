@@ -14,6 +14,12 @@ import sys
 #
 
 def pangrams(s):
+    """
+    This function receives a parameter s, a string, and iterates to determine whether the string s is a pangram or not.
+    :param arr: list - string to be analyzed
+    :return: str - info the s is pangram or not
+    """
+
     alphabet = 'abcdefghijklmnopqrstuvxwyz'
     if all(letter in s.lower() for letter in alphabet):
         return 'pangram'
